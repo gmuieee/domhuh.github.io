@@ -88,10 +88,10 @@ var TextScramble = function () {
 // ——————————————————————————————————————————————————
 
 var phrases = [
-  'Welcome to Delta Force',
-  'If you love coding',
-  'You\'re at the right place',
-  'We hack our way through'
+  'Welcome to GMU IEEE',
+  'We focus on professional development',
+  'We pursue research in technology',
+  'We are GMU IEEE'
 ];
 
 var el = document.querySelector('.text');
