@@ -1,4 +1,4 @@
-# The Delta Website
+# The Delta Website (copy)
 
 Welcome to the code for delta's website.
 
