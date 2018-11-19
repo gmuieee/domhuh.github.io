@@ -5,11 +5,11 @@ $(document).ready(function() {
         {
             url: "/data/members.json",
             success: function(result) {
-                load2018Alumni(result[2018]);
-                loadFourthYears(result[2019]);
-                loadThirdYears(result[2020]);
-                loadSecondYears(result[2021]);
-                $('#allMembersContainer').html(members['fourthYears']+members['thirdYears']+members['secondYears']);
+                load2018Alumni(result[Alums]);
+                 loadOfficers(result[Officers]);
+                // loadThirdYears(result[2020]);
+                // loadSecondYears(result[2021]);
+                $('#allMembersContainer').html(members['officiers']);
             }
         }
     );
@@ -23,6 +23,7 @@ function getHTMLString(person) {
                             <div class="basic-details">
                                 <img src="${person.img}" class="member-image">
                                 <h3 class="member-name">${person.name}</h3>
+								<h2 class ="member-status">${person.profile}</h2>
                             </div>
                             <div class="inner-details ${className[classID]}">
                                 <div class="social-info">`;
@@ -44,24 +45,24 @@ function getHTMLString(person) {
     return returnString;
 }
 
-function loadFourthYears(fourthYears) {
+function loadOfficers(officers) {
     // Populate Fourth Years
-    members['fourthYears'] = fourthYears.map(fourthYear => getHTMLString(fourthYear)).join();
+    members['officers'] = officers.map(officer => getHTMLString(officer)).join();
 }
 
-function loadThirdYears(thirdYears) {
-    // Populate Third Years
-    members['thirdYears'] = thirdYears.map(thirdYear => getHTMLString(thirdYear)).join();
-}
+// function loadThirdYears(thirdYears) {
+    // // Populate Third Years
+    // members['thirdYears'] = thirdYears.map(thirdYear => getHTMLString(thirdYear)).join();
+// }
 
-function loadSecondYears(secondYears) {
-    // Populate Second Years
-    members['secondYears'] = secondYears.map(secondYear => getHTMLString(secondYear)).join();
-}
+// function loadSecondYears(secondYears) {
+    // // Populate Second Years
+    // members['secondYears'] = secondYears.map(secondYear => getHTMLString(secondYear)).join();
+// }
 
-function load2018Alumni(alumnis2018) {
+function load2018Alumni(alumnis) {
     //  Populate 2018 alumnis
-    members['alumnis2018'] = alumnis2018.map(alumni2018 => getHTMLString(alumni2018)).join();
+    members['alumnis'] = alumnis.map(alumni => getHTMLString(alumni)).join();
 }
 
 // function to highlight selected tab on batchButton
@@ -114,27 +115,27 @@ $("#alumniButtons button").on("click", function() {
 
 // Event Listeners
 function clickAllPresentMembers() {
-    $('#allMembersContainer').html(members['fourthYears']+members['thirdYears']+members['secondYears']);
+    $('#allMembersContainer').html(members['Officers']);
     //hide alumniButton Bar
     $("#alumniButtons").css("display", "none");
     //display present members batchButton
     $("#batchButtons").css("display", "inline-block");
 }
 
-function clickFourthYears() {
-    $('#allMembersContainer').html(members['fourthYears']);
-}
+// function clickFourthYears() {
+    // $('#allMembersContainer').html(members['fourthYears']);
+// }
 
-function clickThirdYears() {
-    $('#allMembersContainer').html(members['thirdYears']);
-}
+// function clickThirdYears() {
+    // $('#allMembersContainer').html(members['thirdYears']);
+// }
 
-function clickSecondYears() {
-    $('#allMembersContainer').html(members['secondYears']);
-}
+// function clickSecondYears() {
+    // $('#allMembersContainer').html(members['secondYears']);
+// }
 
 function clickAllAlumni() {
-    click2018Alumni();
+    clickAlumni();
 
     //hide present members batchButton
     $("#batchButtons").css("display", "none");
@@ -142,6 +143,6 @@ function clickAllAlumni() {
     $("#alumniButtons").css("display", "inline-block");
 }
 
-function click2018Alumni() {
-    $('#allMembersContainer').html(members['alumnis2018']);
+function clickAlumni() {
+    $('#allMembersContainer').html(members['alumnis']);
 }
