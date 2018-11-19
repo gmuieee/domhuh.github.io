@@ -37,6 +37,7 @@
   font-weight: 600;
   font-size: 34px;
   color: green;
+  -webkit-animation:colorchange 10s infinite alternate;
 }
 
 @media only screen and (max-width: 550px) {
@@ -101,6 +102,30 @@ p.section-1-content {
     opacity: 1;
   }
 }
+
+@-webkit-keyframes colorchange {
+      0% {
+        color: #a0f78f;
+      }
+      
+      20% {
+        color: #59c643;
+      }
+      
+      40% {
+        color: #ef7270;
+      }
+      
+      60% {
+        color: #dd403e;
+      }
+  
+      80% {
+        color: #c10c09;
+      }
+      
+    }
+
 
 @media only screen and (max-width: 991px) {
   #whoWeAreImage {
