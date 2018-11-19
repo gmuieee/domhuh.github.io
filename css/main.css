@@ -35,8 +35,8 @@
 .text {
   font-weight: 600;
   font-size: 34px;
-  color: green;
-  -webkit-animation:colorchange 2s infinite alternate;
+  color: white/*green*/;
+  -webkit-animation:colorchange 3s infinite alternate;
 }
 
 @media only screen and (max-width: 550px) {
@@ -79,6 +79,7 @@ p.section-1-content {
 
 #events .subtopic, .event p {
   color: white;
+  -webkit-animation:colorchange 10s infinite alternate;
 }
 
 .event .subtopic {
@@ -104,23 +105,23 @@ p.section-1-content {
 
 @-webkit-keyframes colorchange {
       0% {
-        color: green;
+        color: #a0f78f;
       }
       
-      250% {
-        color: red;
+      20% {
+        color: #59c643;
       }
       
-      50% {
-        color: green;
+      40% {
+        color: #ef7270;
       }
       
-      85% {
-        color:red;
+      60% {
+        color: #dd403e;
       }
   
-      100% {
-        color: yellow;
+      80% {
+        color: #c10c09;
       }
       
     }
