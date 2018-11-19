@@ -20,14 +20,16 @@ var pJS = function(tag_id, params){
     },
     particles: {
       number: {
-        value: 400,
+        value: 500,
         density: {
           enable: true,
-          value_area: 800
+          value_area: 900
         }
       },
       color: {
-        value: '#fff'
+        value: #0ece1b 
+        //white '#fff'
+        
       },
       shape: {
         type: 'circle',
@@ -64,10 +66,11 @@ var pJS = function(tag_id, params){
           sync: false
         }
       },
-      line_linked: {
+      line_linked: { 
         enable: true,
         distance: 100,
-        color: '#fff',
+        color: #bf0303,
+        //'#fff',
         opacity: 1,
         width: 1
       },
