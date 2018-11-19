@@ -79,7 +79,7 @@ p.section-1-content {
 
 #events .subtopic, .event p {
   color: white;
-  -webkit-animation:colorchange 10s infinite alternate;
+  /*-webkit-animation:colorchange 10s infinite alternate;*/
 }
 
 .event .subtopic {
