@@ -91,7 +91,7 @@ var phrases = [
   'Welcome to GMU IEEE',
   'We focus on professional development',
   'We pursue research in technology',
-  'We are GMU IEEE'
+  'Happy Holiday!!!'
 ];
 
 var el = document.querySelector('.text');
