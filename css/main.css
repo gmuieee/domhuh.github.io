@@ -107,7 +107,7 @@ p.section-1-content {
         color: green;
       }
       
-      10% {
+      250% {
         color: red;
       }
       
@@ -115,8 +115,12 @@ p.section-1-content {
         color: green;
       }
       
-      100% {
+      85% {
         color:red;
+      }
+  
+      100% {
+        color: yellow;
       }
       
     }
