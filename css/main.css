@@ -37,6 +37,7 @@
   font-size: 34px;
   color: white/*green*/;
   -webkit-animation:colorchange 3s infinite alternate;
+  z-index: 10;
 }
 
 @media only screen and (max-width: 550px) {
