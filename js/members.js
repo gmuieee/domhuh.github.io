@@ -9,7 +9,7 @@ $(document).ready(function() {
                  loadOfficers(result[Officers]);
                 // loadThirdYears(result[2020]);
                 // loadSecondYears(result[2021]);
-                $('#allMembersContainer').html(members['officiers']);
+                $('#allMembersContainer').html(members['officers']);
             }
         }
     );
