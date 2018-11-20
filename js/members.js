@@ -115,7 +115,7 @@ $("#alumniButtons button").on("click", function() {
 
 // Event Listeners
 function clickAllPresentMembers() {
-    $('#allMembersContainer').html(members['Officers']);
+    $('#allMembersContainer').html(members['officers']);
     //hide alumniButton Bar
     $("#alumniButtons").css("display", "none");
     //display present members batchButton
