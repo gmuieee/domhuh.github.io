@@ -6,10 +6,10 @@ $(document).ready(function() {
             url: "/data/members.json",
             success: function(result) {
                 load2018Alumni(result[Alums]);
-                 loadOfficers(result[Officers]);
+                 loadOfficers(result[2020]);
                 // loadThirdYears(result[2020]);
                 // loadSecondYears(result[2021]);
-                $('#allMembersContainer').html(members['officers']);
+                $('#allMembersContainer').html(members['off']);
             }
         }
     );
@@ -45,9 +45,9 @@ function getHTMLString(person) {
     return returnString;
 }
 
-function loadOfficers(officers) {
+function loadOfficers(off) {
     // Populate Fourth Years
-    members['officers'] = officers.map(officer => getHTMLString(officer)).join();
+    members['off'] = off.map(officer => getHTMLString(officer)).join();
 }
 
 // function loadThirdYears(thirdYears) {
@@ -60,9 +60,9 @@ function loadOfficers(officers) {
     // members['secondYears'] = secondYears.map(secondYear => getHTMLString(secondYear)).join();
 // }
 
-function load2018Alumni(alumnis) {
+function load2018Alumni(alum) {
     //  Populate 2018 alumnis
-    members['alumnis'] = alumnis.map(alumni => getHTMLString(alumni)).join();
+    members['alum'] = alum.map(alumni => getHTMLString(alumni)).join();
 }
 
 // function to highlight selected tab on batchButton
@@ -115,7 +115,7 @@ $("#alumniButtons button").on("click", function() {
 
 // Event Listeners
 function clickAllPresentMembers() {
-    $('#allMembersContainer').html(members['officers']);
+    $('#allMembersContainer').html(members['off']);
     //hide alumniButton Bar
     $("#alumniButtons").css("display", "none");
     //display present members batchButton
@@ -144,5 +144,5 @@ function clickAllAlumni() {
 }
 
 function clickAlumni() {
-    $('#allMembersContainer').html(members['alumnis']);
+    $('#allMembersContainer').html(members['alum']);
 }
