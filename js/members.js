@@ -5,8 +5,8 @@ $(document).ready(function() {
         {
             url: "/data/members.json",
             success: function(result) {
-                load2018Alumni(result[Alums]);
-                 loadOfficers(result[2020]);
+                load2018Alumni(result[2018]);
+                loadOfficers(result[2020]);
                 // loadThirdYears(result[2020]);
                 // loadSecondYears(result[2021]);
                 $('#allMembersContainer').html(members['off']);
