@@ -6,7 +6,7 @@ $(document).ready(function() {
             url: "/data/members.json",
             success: function(result) {
                 load2018Alumni(result[2018]);
-                loadOfficers(result["officers"]);
+                loadOfficers(result[officers]);
                 // loadThirdYears(result[2020]);
                 // loadSecondYears(result[2021]);
                 $('#allMembersContainer').html(members['off']);
