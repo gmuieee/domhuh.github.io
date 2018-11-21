@@ -23,7 +23,7 @@ function getHTMLString(person) {
                             <div class="basic-details">
                                 <img src="${person.img}" class="member-image">
                                 <h3 class="member-name">${person.name}</h3>
-								<h2 class ="member-status">${person.profile}</h2>
+								<h3 class ="member-status">${person.profile}</h2>
                             </div>
                             <div class="inner-details ${className[classID]}">
                                 <div class="social-info">`;

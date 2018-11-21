@@ -70,11 +70,13 @@ section {
 .basic-details .member-name {
     color: white;
     font-size: 14px;
+	display: inline;
 }
 
 .basic-details .member-status {
     color: cyan;
     font-size: 14px;
+	display: inline;
 }
 /* Inner Details Div - Consist of interests and social media icons */
 .inner-details {
