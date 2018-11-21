@@ -23,7 +23,7 @@
   "officers" : [
     {
       "profile": "President",
-      "img": "/images/members/Dom.jpg",
+      "img": "/images/members/Dom.jpeg",
       "name": "Dom Huh",
       "github_url": "https://github.com/domhuh",
       "additional_url": "mailto:dhuh4@gmu.edu",
@@ -39,7 +39,7 @@
     },
 	{
       "profile": "Secretary",
-      "img": "/images/members/Michael.jpg",
+      "img": "/images/members/Michael.jpeg",
       "name": "Michael Nguyen",
       "github_url": "",
       "additional_url": "mailto:mnguyen61@gmu.edu",

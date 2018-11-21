@@ -76,8 +76,8 @@ section {
 }
 
 .basic-details .member-status {
-    color: cyan;
-    font-size: 18px;
+    color: rgb(0,100,0);
+    font-size: 14px;
 	display: inline;
 }
 /* Inner Details Div - Consist of interests and social media icons */
