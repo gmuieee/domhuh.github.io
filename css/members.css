@@ -70,8 +70,7 @@ section {
 .basic-details .member-name {
     color: white;
     font-size: 14px;
-	padding-top: 10px;
-	padding-bottom: 0px;
+	display: inline;
 }
 
 .basic-details .member-status {

@@ -22,6 +22,7 @@ function getHTMLString(person) {
     var returnString = `<div class="member-container">
                             <div class="basic-details">
                                 <img src="${person.img}" class="member-image">
+								<br>
                                 <h3 class="member-name">${person.name}</h3>
 								<br>
 								<h2 class ="member-status">${person.profile}</h2>
