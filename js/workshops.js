@@ -3,7 +3,7 @@ var projects = {};
 $(document).ready(function() {
     $.ajax(
         {
-            url: "/data/projects.json",
+            url: "/data/workshops.json",
             success: function(result) {
 
                 // Remove projects that aren't active
