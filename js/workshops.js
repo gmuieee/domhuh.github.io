@@ -1,9 +1,9 @@
-var projects = {};
+var workshops = {};
 
 $(document).ready(function() {
     $.ajax(
         {
-            url: "/data/projects.json",
+            url: "/data/workshops.json",
             success: function(result) {
 
                 // Remove projects that aren't active
@@ -15,9 +15,9 @@ $(document).ready(function() {
 
                 for (var i=0;i<result.length;i++) {
                     if (i%2==0) {
-                        $("#projCol1").append(getHTMLString(result[i]));
+                        $("#wsCol1").append(getHTMLString(result[i]));
                     } else {
-                        $("#projCol2").append(getHTMLString(result[i]));
+                        $("#wsCol2").append(getHTMLString(result[i]));
                     }
                 }
             }
@@ -33,7 +33,7 @@ function getHTMLString(project) {
                                 <div class="text-content">
                                     <p class="project-info">
                                         ${project.desc}
-                                        <h4 class="developers-heading"><strong>Developers</strong></h4>
+                                        <h4 class="developers-heading"><strong>Leader</strong></h4>
                                         <div class="developers">
                                         `
 
