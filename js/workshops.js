@@ -1,6 +1,6 @@
 var workshops = {};
 
-$(document).ready(function() {
+$(document).ready0(function() {
     $.ajax(
         {
             url: "/data/workshops.json",
@@ -25,7 +25,7 @@ $(document).ready(function() {
     );
 })
 
-function getHTMLString(project) {
+function getHTMLString0(workshops) {
     var returnString = `<div class="project-grid">
                             <h3 class="subtopic">${workshops.title}</h3>
                             <div class="content">
