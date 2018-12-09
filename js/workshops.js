@@ -27,9 +27,9 @@ $(document).ready(function() {
 
 function getHTMLString(project) {
     var returnString = `<div class="project-grid">
-                            <h3 class="subtopic">${project.title}</h3>
+                            <h3 class="subtopic">${workshops.title}</h3>
                             <div class="content">
-                                <img class="project-image" src="${project.img}">
+                                <img class="project-image" src="${workshops.img}">
                                 <div class="text-content">
                                     <p class="project-info">
                                         ${project.desc}
@@ -37,11 +37,11 @@ function getHTMLString(project) {
                                         <div class="developers">
                                         `
 
-    var developers = project.developers;
+    var developers = workshops.developers;
     for (var i=0;i<developers.length;i++) {
         returnString+=`<div class="dev">
                             <img src="${developers[i].img}" width="100px" class="dev-image">
-                            <h3 class="dev-name">${developers[i].name}</h3>
+                            <h3 class="dev-name">${workshops[i].name}</h3>
                         </div>`;
     }
     
