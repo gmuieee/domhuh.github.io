@@ -1,0 +1,114 @@
+        .wall {
+			width: 40px;
+			height: 40px;
+			background-image: url('wall.png');
+			display: inline-block;
+		}
+		.coin {
+			width: 40px;
+			height: 40px;
+			background-image: url('coin.png');
+			display: inline-block;
+		}
+		.ground {
+			width: 40px;
+			height: 40px;
+			background-image: url('bg.png');
+			display: inline-block;
+		}
+		.michael {
+			width: 40px;
+			height: 40px;
+			background-image: url('michael.png');
+			display: inline-block;
+		}
+		.michael0 {
+			width: 40px;
+			height: 40px;
+			background-image: url('michael0.png');
+			display: inline-block;
+		}
+		.vincent {
+			width: 40px;
+			height: 40px;
+			background-image: url('vincent.png');
+			display: inline-block;
+		}
+		.vincent0 {
+			width: 40px;
+			height: 40px;
+			background-image: url('vincent0.png');
+			display: inline-block;
+		}
+		.fateema {
+			width: 40px;
+			height: 40px;
+			background-image: url('fateema.png');
+			display: inline-block;
+		}
+		.fateema0 {
+			width: 40px;
+			height: 40px;
+			background-image: url('fateema0.png');
+			display: inline-block;
+		}
+		.daniel {
+			width: 40px;
+			height: 40px;
+			background-image: url('daniel.png');
+			display: inline-block;
+		}
+		.daniel0 {
+			width: 40px;
+			height: 40px;
+			background-image: url('daniel0.png');
+			display: inline-block;
+		}
+		.toan {
+			width: 40px;
+			height: 40px;
+			background-image: url('toan.png');
+			display: inline-block;
+		}
+		.toan0 {
+			width: 40px;
+			height: 40px;
+			background-image: url('toan0.png');
+			display: inline-block;
+		}
+		.dom {
+			width: 40px;
+			height: 40px;
+			background-image: url('dom.png');
+			display: inline-block;
+		}
+
+		.dom0 {
+			width: 40px;
+			height: 40px;
+			background-image: url('dom0.png');
+			display: inline-block;
+		}
+		.melany {
+			width: 40px;
+			height: 40px;
+			background-image: url('melany.png');
+			display: inline-block;
+		}
+
+		.melany0 {
+			width: 40px;
+			height: 40px;
+			background-image: url('melany0.png');
+			display: inline-block;
+		}
+		div {
+			line-height: 0px;
+		}
+
+		.green_wall {
+			width: 40px;
+			height: 40px;
+			background-image: url('green_wall.png');
+			display: inline-block;
+		}
